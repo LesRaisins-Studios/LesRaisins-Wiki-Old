@@ -1,0 +1,6 @@
+[book]
+authors = ["xjqsh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "LesRaisins Guide"
