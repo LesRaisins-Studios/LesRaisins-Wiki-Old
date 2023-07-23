@@ -234,8 +234,27 @@
   }
 }
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="模型部件说明"><a class="header" href="#模型部件说明">模型部件说明</a></h1>
-
+<div style="break-before: page; page-break-before: always;"></div><h1 id="枪械模型部件说明"><a class="header" href="#枪械模型部件说明">枪械模型部件说明</a></h1>
+<hr />
+<h2 id="ak47"><a class="header" href="#ak47">ak47</a></h2>
+<p>枪械标识符: <code>ak47</code></p>
+<style>
+table {float:left}
+</style>
+<div class="table-wrapper"><table><thead><tr><th>部件名</th><th>说明</th></tr></thead><tbody>
+<tr><td>main</td><td>主要枪体</td></tr>
+<tr><td>mount</td><td>附件(安装瞄具)</td></tr>
+<tr><td>bolt</td><td>枪机</td></tr>
+<tr><td>light_stock</td><td>轻型枪托</td></tr>
+<tr><td>tactical_stock</td><td>战术枪托</td></tr>
+<tr><td>heavy_stock</td><td>重型枪托</td></tr>
+<tr><td>brake</td><td>制退器</td></tr>
+<tr><td>compensator</td><td>补偿器</td></tr>
+<tr><td>silencer</td><td>消声器</td></tr>
+<tr><td>standard_mag</td><td>弹匣(无拓展)</td></tr>
+<tr><td>extended_mag</td><td>弹匣(安装任意拓展)</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -253,22 +272,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
