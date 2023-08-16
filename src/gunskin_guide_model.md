@@ -1,5 +1,7 @@
 <style>
-    table {float:left}
+    table {
+        margin-left: 0.1%
+    }
 </style>
 # 枪械模型部件说明
 
