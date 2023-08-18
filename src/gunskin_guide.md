@@ -107,76 +107,125 @@
 
 
 ## 通用皮肤
-在 TaC 0.3.9 的开发版本中，加入了注册好的「皮肤插件」，其中提供了 9 种（当前）通用皮肤。
+在 TaC 0.3.9 的开发版本中，加入了注册好的「皮肤插件」，其中提供了 16 种（当前）通用皮肤。
 
-对于新增在这 9 种皮肤下的内容，可以遵循在`skin.json`中已有的注册形式进行注册，成功加载后当即可以在游戏内通过「皮肤插件」调用。
+对于新增在这 16 种皮肤下的内容，可以遵循在`skin.json`中已有的注册形式进行注册，成功加载后当即可以在游戏内通过「皮肤插件」调用。
 
-以`ai_awp`的通用皮肤举例：
+以`tec_9`的通用皮肤举例：
 ```json
 {
-  "ai_awp": {
-    "ai_awp_beige": {
+  "tec_9": {
+    "tec_9_black": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_beige"
+        "4": "tac:gunskin/tec_9/tec_9_black"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_beige.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_black.png"
     },
-    "ai_awp_black": {
+    "tec_9_blue": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_black"
+        "4": "tac:gunskin/tec_9/tec_9_blue"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_black.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_blue.png"
     },
-    "ai_awp_blue": {
+    "tec_9_brown": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_blue"
+        "4": "tac:gunskin/tec_9/tec_9_brown"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_blue.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_brown.png"
     },
-    "ai_awp_green": {
+    "tec_9_dark_blue": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_green"
+        "4": "tac:gunskin/tec_9/tec_9_dark_blue"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_green.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_dark_blue.png"
     },
-    "ai_awp_jade": {
+    "tec_9_dark_green": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_jade"
+        "4": "tac:gunskin/tec_9/tec_9_dark_green"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_jade.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_dark_green.png"
     },
-    "ai_awp_orange": {
+    "tec_9_gray": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_orange"
+        "4": "tac:gunskin/tec_9/tec_9_gray"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_orange.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_gray.png"
     },
-    "ai_awp_pink": {
+    "tec_9_green": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_pink"
+        "4": "tac:gunskin/tec_9/tec_9_green"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_pink.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_green.png"
     },
-    "ai_awp_sand": {
+    "tec_9_jade": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_sand"
+        "4": "tac:gunskin/tec_9/tec_9_jade"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_sand.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_jade.png"
     },
-    "ai_awp_white": {
+    "tec_9_light_gray": {
       "type": "texture",
       "textures": {
-        "4": "tac:gunskin/ai_awp/ai_awp_white"
+        "4": "tac:gunskin/tec_9/tec_9_light_gray"
       },
-      "icon": "tac:textures/gunskin/icon/ai_awp_white.png"
+      "icon": "tac:textures/gunskin/icon/tec_9_light_gray.png"
+    },
+    "tec_9_magenta": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_magenta"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_magenta.png"
+    },
+    "tec_9_orange": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_orange"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_orange.png"
+    },
+    "tec_9_pink": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_pink"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_pink.png"
+    },
+    "tec_9_purple": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_purple"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_purple.png"
+    },
+    "tec_9_red": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_red"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_red.png"
+    },
+    "tec_9_sand": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_sand"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_sand.png"
+    },
+    "tec_9_white": {
+      "type": "texture",
+      "textures": {
+        "4": "tac:gunskin/tec_9/tec_9_white"
+      },
+      "icon": "tac:textures/gunskin/icon/tec_9_white.png"
     }
   }
 }
