@@ -5,4 +5,5 @@
     - [通用皮肤](./gunskin_guide/common_skin.md) 
     - [材质皮肤](./gunskin_guide/texture_skin.md) 
     - [自定义皮肤](./gunskin_guide/custom_skin.md) 
+    - [皮肤绘制](./gunskin_guide/paint.md)
   - [模型部件列表](./gunskin_guide/model.md)
