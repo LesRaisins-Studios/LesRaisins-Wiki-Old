@@ -8,3 +8,5 @@
     - [自定义皮肤](./gunskin_guide/custom_skin.md) 
   - [自定义动画](./gunskin_guide/custom_animation.md) 
   - [模型部件列表](./gunskin_guide/model.md)
+- [附属包制作指南](./addon_guide.md) 
+  - [添加第一把枪](./addon_guide/add_gun.md) 
