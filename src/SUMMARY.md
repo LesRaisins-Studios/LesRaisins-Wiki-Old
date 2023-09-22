@@ -10,3 +10,9 @@
   - [模型部件列表](./gunskin_guide/model.md)
 - [附属包制作指南](./addon_guide.md) 
   - [添加第一把枪](./addon_guide/add_gun.md) 
+    - [模型加载器](./addon_guide/add_gun/model_loader.md) 
+    - [动画控制器](./addon_guide/add_gun/animation_controller.md) 
+    - [实际渲染类](./addon_guide/add_gun/animation_model.md) 
+    - [调整展示表现和数据]()
+  - [常见问题]()
+
