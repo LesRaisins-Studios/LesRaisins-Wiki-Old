@@ -16,7 +16,8 @@ dependencies {
 
 请注意，从`0.3.9`开始，因为某些严重的问题，`curios`不再作为TaC的前置（防弹衣相关内容被暂时移除），所以你可以不必添加他  
 介于截止至本指南撰写时，`0.3.9`尚未在curseforge上发布，你可能需要从本地导入TaC作为前置，具体请参考：  
-[Forge Documentation](https://docs.minecraftforge.net/en/fg-5.x/dependencies/)
+[Forge Documentation](https://docs.minecraftforge.net/en/fg-5.x/dependencies/)  
+当然，你也可以下载TaC的源码并建立本地仓库
 
 ## mods.toml
 ```toml

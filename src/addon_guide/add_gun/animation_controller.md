@@ -13,7 +13,6 @@
     public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_inspect.gltf"));
     public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_draw.gltf"));
     public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_static.gltf"));
-    private static final HCARAnimationController instance = new HCARAnimationController();
 ```
 这里我们为`hcar`的每一个动画都创建了一个`AnimationMeta`静态字段，以便我们后续调用
 
@@ -71,7 +70,7 @@ public class HCARAnimationController extends GunAnimationController {
     public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_inspect.gltf"));
     public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_draw.gltf"));
     public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/hcar_static.gltf"));
-    private static final HCARAnimationController instance = new HCARAnimationController();
+    private static HCARAnimationController instance;
 
     private HCARAnimationController() {
         try {
@@ -88,6 +87,9 @@ public class HCARAnimationController extends GunAnimationController {
     }
 
     public static HCARAnimationController getInstance(){
+        if(instance==null){
+            instance = new HCARAnimationController();
+        }
         return instance;
     }
 
@@ -123,5 +125,6 @@ public class HCARAnimationController extends GunAnimationController {
         return INDEX_LEFT_HAND;
     }
 }
+
 
 ```

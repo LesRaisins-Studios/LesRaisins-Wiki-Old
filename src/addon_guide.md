@@ -15,6 +15,7 @@
 
 3. 如果你需要一些关于制作模型/纹理/动画的相关帮助，可以参考[章节：皮肤制作指南](./gunskin_guide.md)，这里包含了有关制作能够正确被TaC加载的模型和动画的部分帮助和注意事项
 
+4. 示例mod与TaC本体使用的混淆表并不一致，有些时候可能出现方法名/类名不一样的情况，请自行甄别
 ## 一些可能有用的链接
 - [Boson 1.16 Modding Tutorial](https://boson.v2mcdev.com/introducation/intro.html)
 - TaC的Github仓库（你可能需要自行找一下你需要的版本在哪）
