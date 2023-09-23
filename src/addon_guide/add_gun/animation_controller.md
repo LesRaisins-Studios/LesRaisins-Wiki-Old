@@ -33,8 +33,10 @@
     }
 ```
 
-## 为动画部件指定node节点
-如果你查看过TaC本体的`GunAnimationController`实现，你应该能发现里面有一系列的形如`INDEX_BODY`的静态字段，这些静态字段对应了`.gltf`文件中的`NODE`节点，一个比较方便的确认方法是安装一个`vscode`插件，比如 [glTF Tools](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
+## 为动画指定node节点
+如果你查看过TaC本体的`GunAnimationController`实现，你应该能发现里面有一系列的形如`INDEX_BODY`的静态字段，这些静态字段对应了`.gltf`文件中的`NODE`节点  
+
+一个比较方便的确认方法是安装一个`vscode`插件，比如 [glTF Tools](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 ![查看node](../../assets/pic/gltf_node.png) 
 

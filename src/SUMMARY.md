@@ -9,6 +9,7 @@
   - [自定义动画](./gunskin_guide/custom_animation.md) 
   - [模型部件列表](./gunskin_guide/model.md)
 - [附属包制作指南](./addon_guide.md) 
+  - [准备工作](./addon_guide/start.md) 
   - [添加第一把枪](./addon_guide/add_gun.md) 
     - [模型加载器](./addon_guide/add_gun/model_loader.md) 
     - [动画控制器](./addon_guide/add_gun/animation_controller.md) 
