@@ -1,4 +1,5 @@
 # 皮肤描述文件
+
 要让模组读取资源包里的枪械皮肤，你需要在资源包里添加一个json文件以描述皮肤  
 具体的路径为
 `assets/<命名空间>/models/gunskin/skin.json`  
@@ -39,11 +40,13 @@
       "models": {                       //当且仅当类型为 custom
         "<部件名>": "<路径>"
       },
-      "icon": "<路径>"                  //可选,皮肤对应的武器图标,在右下角状态栏展示
+      "icon": "<路径>",                 //可选,皮肤对应的武器图标,在右下角状态栏展示
+      "mini_icon": "<路径>"             //目前仅LesRaisinsGui使用到了,用于右上角的击杀播报展示
     }
 ```
 
-关于每一种皮肤类型的详细说明，请参阅他们各自的页面  
-`common_texture` [章节：通用皮肤](./gunskin_guide/common_skin.md)
-`texture` [章节：材质皮肤](./gunskin_guide/texture_skin.md) 
-`custom` [章节：自定义皮肤](./gunskin_guide/custom_skin.md)
+关于每一种`皮肤类型`的详细说明，请参阅他们各自的页面  
+
+> `common_texture` [章节：通用皮肤](./common_skin.md)  
+> `texture` [章节：材质皮肤](./texture_skin.md)   
+> `custom` [章节：自定义皮肤](./custom_skin.md)  
