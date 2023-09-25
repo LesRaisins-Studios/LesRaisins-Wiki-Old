@@ -2,7 +2,7 @@
 ## 动画制作
 1. 导入模型  
    打开Blockbench,创建自由模型，导入枪械及手部模型  
-   ![图片](![](https://s1.3hov.com/lesraisins/i/2023/09/25/1.png)  
+   ![图片](https://s1.3hov.com/lesraisins/i/2023/09/25/1.png)  
    > 要点注意：  
    >> 1.手部模型T为手背，L为左手；  
    >> 2.枪口朝向北方；  
