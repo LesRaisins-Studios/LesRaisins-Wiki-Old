@@ -1,5 +1,6 @@
 # Summary
 
+- [动画制作指南](./gunskin_guide/ani.md)
 - [皮肤制作指南](./gunskin_guide.md)
   - [皮肤绘制帮助](./gunskin_guide/paint.md)
   - [皮肤描述文件](./gunskin_guide/description_file.md) 
