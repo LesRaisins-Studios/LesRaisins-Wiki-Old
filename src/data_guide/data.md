@@ -1,27 +1,8 @@
 # 武器数据修改教学
-## 一、准备工作
-### 1. 创建数据包：
-在文件夹"saves/存档名/datapack"(单机)或"world/datapack"(服务器)下创建一个文件夹，文件夹名称随意。
-在该文件夹下创建**文件夹data**和**文件pack.mcmeta**
-并将一下代码复制进pack.mcmeta内
-```
-{
-    "pack": {
-        "pack_format": 6,
-        "description": "介绍"
-    }
-}
-```
-进入data文件夹创建以下路径：**"data/lesraisinsadd/guns"**或**"data/tac/guns"**
-
-### 2.加载数据包：
-单机游戏使用/reload指令重载数据包
-服务器推荐重启重载
-
-## 二、提取数据
+## 一、提取数据
 ### 1.解压mod
 解压mod，并在**"data/lesraisinsadd/guns"**或**"data/tac/guns"**路径下复制所有文件放入数据包
-## 三、修改数据
+## 二、修改数据
 根据需求修改完数据后，使用reload重载
 # 数据包模板：
 ```
@@ -203,6 +184,202 @@
         "scale": 0.00
       },
 	  //镭射装置
+      "irDevice": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      }
+    }
+  }
+}
+```
+
+---
+# Weapon Data Modification
+## I. Extract data
+### 1. Unpack the mod
+Unzip the mod and copy all the files under **"data/lesraisinsadd/guns "** or **"data/tac/guns "** and put them into the packet.
+## II. Modifying Data
+After modifying the data according to the requirements, use command /reload to enable all changes you have made.
+# data example:
+```
+{  
+  "general": {
+  //Whether or not the weapon can fire in full auto mode
+  "auto": true,
+  //Rate of fire in Rounds Per Minute
+  "rate": 850,
+  //Weapon firing mode, 1 semi, 2 full auto, 3 burst, 0 safety.
+  "rateSelector": [2, 1],
+  //Third person grip type
+  "gripType": "tac:two_handed_ak47",
+  //Muzzle up angle when firing
+  "recoilAngle": 2.135,
+  //Angle at which the weapon's muzzle recoils when fired.
+  "horizontalRecoilAngle": 1.35,
+  //The strength of the weapon's backward recoil
+  "recoilKick": 1.65,
+  //How much the recoil is reduced when the gun is opened (by x%)
+  "recoilAdsReduction": 0.205,
+  //The time it takes for the weapon to recoil, calculated as 1-x, the larger the value, the faster the weapon recoils and the greater the visual recoil impact.
+  "weaponRecoilOffset": 0.805,
+  //Visual weakening
+  "cameraRecoilModifier": 1.35,
+  //The time it takes for the player's viewpoint to go up, the smaller the value the faster it goes up. Too small a value may look dizzying.
+  "recoilDuration": 0.225,
+  //Weapon weight
+  "weightKilo": 2.95,
+
+  //Base diffusion parameter. Accessories that increase accuracy will reduce this parameter by a percentage of the corresponding value.
+  "spread": 1.565,
+  //First Shot Accuracy
+  "firstShotSpread": 0.15,
+  //Penalty for shooting without aiming, multiplied by
+  "hipFireInaccuracy": 5.725,
+  //Number of bullets required for the spreads penalty
+  "projToMinAccuracy": 8,
+  //The number of seconds to reset the spreads penalty
+  "msToAccuracyReset": 320,
+  //Movement shooting spread penalty in seconds
+  "movementInaccuracy": 0.55
+  },
+  "projectile": {
+  //Type of ammo the weapon uses
+    "item": "tac:nato_556_bullet",
+	//whether the model of the projectile is visible or not
+    "visible": false,
+	//Total damage per shot
+    "damage": 7,
+	//distance from the start of damage decay, x*range  
+    "decayStart": 0.1,
+	//Minimum damage retention
+    "minDecayMultiplier": 0.2,
+	//End distance
+    "decayEnd": 0.85,
+	//Size of the bullet's hitbox
+    "size": 0.075,
+	//Bullet speed block/tick
+    "speed": 25,
+	//Bullet's existence time, tick
+    "life": 9,
+	//Bullet trail length
+    "trailLengthMultiplier": 2.5
+  },
+  "reloads": {
+  // Whether or not to load through the magazine. If otherwise single shot load.
+    "magFed": true,
+	// Default max ammo capacity.
+    "maxAmmo": 30,
+	// Time to load, in ticks.
+    "reloadMagTimer": 63,
+	// Extra time to reload empty magazines.
+    "additionalReloadEmptyMagTimer": 27,
+	// Additional ammo capacity per level when having the Magazine Expansion Enchantment. Survival Mode available attachment levels are only three.
+    "maxAdditionalAmmoPerOC": [10, 20, 30],
+	// When the ammo change command starts, it is not possible to terminate the weapon's loading by firing after x tick time. This item is for the bullet change animation
+    "preReloadPauseTicks": 8
+  },
+  #Sound effects need to be registered in SoundRegistry.Java and referenced via the sound.json file
+  "sounds": {
+    "fire": "lesraisinsadd:item.hk433_fire",
+    "reloadNormal": "lesraisinsadd:item.hk433_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.hk433_reload_empty",
+    "draw": "lesraisinsadd:item.hk433_draw",
+    "inspect": "lesraisinsadd:item.hk433_inspect",
+    "cock": "lesraisinsadd:item.pistol.cock",
+    "silencedFire": "tac:item.ak47_fire_s"
+  },
+  "display": {
+  // Position of muzzle flame
+    "flash": {
+	// y-axis (up and down)
+      "yOffset": 6.0,
+	//z-axis (front to back)
+      "zOffset": -20.75,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+	//shell casting
+    "shellCasing": {
+      "tickLife":10,
+      "yOffset": 1,
+	//left and right
+      "xOffset": 0,
+      "zOffset": -6,
+	//size
+      "scale": 1,
+      "velocityX": 8,
+      "velocityY": 1,
+      "velocityZ": -0.5,
+      "rVelocityX": 0,
+      "rVelocityY": 1.25,
+      "rVelocityZ": 0.0,
+      "aVelocityX": 45.0,
+      "aVelocityY": -90.0,
+      "aVelocityZ": 15.0,
+	//Shell type, "shell_steel" black rifle shell, "shell_small" bronze pistol shell, "shell_silver" silver pistol shell, "shell_shotgun" shotgun shell, "shell_large" bronze rifle shell, "shell_huge" sniper shell.
+      "casingModel": "tac:special/shell_large"
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true,
+	//WeaponType: 0Rifle, 1MachineGun, 2Pistol, 3Shotgun, 4SubmachineGun, 5SniperGun, 6RPG
+    "weaponType": 0
+  },
+  "modules": {
+  // Position for aiming 
+    "zoom": {
+	//fov zoom (1-x)% on aiming
+      "fovModifier": 0.8,
+	  //Height
+      "yOffset": 14.40,
+	  //distance, near plus or minus
+      "zOffset": -1.8,
+	  //Left and right
+	  "xOffset": 0
+    },
+	//Attachments, delete the corresponding part to disable the attachments.
+    "attachments": {
+	//Muzzle attachments (no need to change parameters)
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+	  //Stock accessories (no need to change parameters)
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
+      },
+	  //Scope attachments (parameters need to be changed to render the scope to the correct position)
+      "scope": {
+        "yOffset": 12.2,
+        "zOffset": 2.0,
+        "scale": 1.0
+      },
+	  //Extended Magazine (no need to change parameters)
+      "extendedMag": {
+        "yOffset": 1000.89,
+        "zOffset": 5.35,
+        "scale": 0.0
+      },
+	  //Pistol Sight (no need to modify parameters)
+      "pistolScope": {
+        "yOffset": 7.35,
+        "zOffset": 10.2,
+        "scale": 1.0,
+        "doRenderMount": true,
+        "doOnSlideMovement": false
+      },
+	  //grip (no need to change parameters)
+      "underBarrel": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      },
+	  //laser device (no need to change parameters)
       "irDevice": {
         "yOffset": 7.799,
         "zOffset": -2.35,

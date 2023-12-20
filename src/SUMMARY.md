@@ -17,6 +17,8 @@
     - [实际渲染类](./addon_guide/add_gun/animation_model.md) 
     - [调整展示表现和数据]()
   - [常见问题]()
-- [数据指南]()
-  - [武器数据修改](./data_guide/data.md) 
+- [数据指南|Data Guide](./data_guide/data_guide.md)
+  - [数据包制作|Datapack](./data_guide/datapack.md) 
+  - [武器数据修改|Weapons Data](./data_guide/data.md) 
+  - [合成表修改|Recipes](./data_guide/recipes.md) 
 
